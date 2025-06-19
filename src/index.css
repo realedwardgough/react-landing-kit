@@ -1,12 +1,92 @@
+
+/**
+  * Tailwind CSS v3.0.0
+  * https://tailwindcss.com
+**/
+@import url("https://rsms.me/inter/inter.css");
 @import "tailwindcss";
 
-@import url("https://rsms.me/inter/inter.css");
+
+/**
+  * Global styles
+  * This file is used to define global styles that are not specific to any component.
+  * It is imported in the main entry point of the application.
+  * 
+  * @author Edward Gough
+  * @version 1.0.0
+  * @license MIT
+**/
+
+/** Fonts **/
+@font-face {
+  font-family: 'CostaRica';
+  src: url('./assets/fonts/CostaRica.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.costarica {
+  font-family: 'CostaRica', sans-serif;
+}
+.costarica-bold {
+    font-family: 'CostaRica', sans-serif;
+    text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff, -2px 0 0 #fff, 2px 0 0 #fff, 0 -2px 0 #fff, 0 2px 0 #fff;
+}
+
+@font-face {
+  font-family: 'Tangkiwood';
+  src: url('./assets/fonts/TANTangkiwood-Display.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.tangkiwood {
+  font-family: 'Tangkiwood', sans-serif;
+}
+
+/** Base **/
 html {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /** font-family: 'Tangkiwood', sans-serif; **/
+  scroll-behavior: smooth;
 }
 
+
+
+/** Colours **/
+.brand-color-blocks {
+  background: linear-gradient(to bottom, #c7481d 33.33%, #3e9993 33.33% 66.66%, #e6c141 66.66%);
+}
+.brand-color-one {
+  background-color: #c7481d;
+}
+
+.highlight-one {
+  background-color: #c7481d62;
+}
+.highlight-two {
+  background-color: #3e999356;
+}
+.highlight-three {
+  background-color: #e6c24151;
+}
+
+/** Buttons **/
+.brand-button {
+    text-align: left;
+    padding-right: 4px;
+    color: black;
+    line-height: 14px;
+    padding-top: 4px;
+}
+
+
+
+
+
+/** Copied Styles for Mockup **/
 .gradient {
   background: rgba(199, 72, 29, 10);
   background: linear-gradient(
@@ -17,21 +97,15 @@ html {
   );
 }
 
-button,
 .gradient2 {
   background-color: #f39f86;
   background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
 }
 
-/* Browser mockup code
- * Contribute: https://gist.github.com/jarthod/8719db9fef8deb937f4f
- * Live example: https://updown.io
- */
-
 .browser-mockup {
   border-top: 2em solid rgba(230, 230, 230, 0.7);
   position: relative;
-  height: 60vh;
+  /*height: 60vh;*/
 }
 
 .browser-mockup:before {

@@ -1,28 +1,46 @@
 import { useState } from "react";
 import "./App.css";
 
-import Navigation from "./components/navigation.jsx";
-import Hero from "./components/hero.jsx";
-import Customers from "./components/customers.jsx";
-import Section from "./components/section.jsx";
-import Cards from "./components/cards.jsx";
-import Pricing from "./components/pricing.jsx";
-import CallToAction from "./components/calltoaction.jsx";
-import Footer from "./components/footer.jsx";
+// Importing the blocks
+import Navigation from "./blocks/navigation.jsx";
+import Hero from "./blocks/hero.jsx";
+import Customers from "./blocks/customers.jsx";
+import LatestPublishing from "./blocks/latest-publishing.jsx";
+import DevelopmentAndSoftware from "./blocks/development-and-software.jsx";
+import MediaAndPublishing from "./blocks/media-and-publishing.jsx";
+import LatestWork from "./blocks/latest-work.jsx";
+import AboutUs from "./blocks/about-us.jsx";
+import Pricing from "./blocks/pricing.jsx";
+import CallToAction from "./blocks/calltoaction.jsx";
+import Footer from "./blocks/footer.jsx";
+
+// Importing the hooks
+import Fade from "./hooks/fade.jsx";
 
 function App() {
+  Fade();
+
   return (
     <>
       <Navigation />
       <Hero />
       <Customers />
-      <Section />
-      <Cards />
-      <Pricing />
+      <DevelopmentAndSoftware />
+      <LatestWork />
       <CallToAction />
+      <MediaAndPublishing />
+      <LatestPublishing />
+      <AboutUs />
       <Footer />
     </>
   );
 }
+
+/**
+ *       
+      <Pricing />
+      <CallToAction />
+      <Footer />
+ */
 
 export default App;
