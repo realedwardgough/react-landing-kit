@@ -8,7 +8,13 @@ html {
 }
 
 .gradient {
-  background-image: linear-gradient(-225deg, #cbbacc 0%, #2580b3 100%);
+  background: rgba(199, 72, 29, 10);
+  background: linear-gradient(
+    27deg,
+    rgba(199, 72, 29, 0.6) 0%,
+    rgba(62, 153, 147, 0.6) 65%,
+    rgba(230, 193, 65, 0.6) 100%
+  );
 }
 
 button,
