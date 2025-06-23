@@ -40,7 +40,7 @@ function Home() {
       {/* Hero Section */}
       <Hero />
 
-      {/* Development & Software Section */}
+      {/* Our Customers Section */}
       <Container color="white" title="Our Customers">
         <Showcase>
           <ShowcaseItem title="Smokey Joez" img="/SmokeyJoez.svg" alt="Smokey Joez's Logo"/>
