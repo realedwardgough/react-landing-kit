@@ -41,7 +41,7 @@ function Home() {
       <Hero />
 
       {/* Our Customers Section */}
-      <Container color="white" title="Our Customers">
+      <Container color="white" title="Our Customers" id="Customers">
         <Showcase>
           <ShowcaseItem title="Smokey Joez" img="/SmokeyJoez.svg" alt="Smokey Joez's Logo"/>
           <ShowcaseItem title="Digital Blue Solutions" img="/DBS.svg" alt="Digital Blue Solution's Logo"/>
@@ -49,7 +49,7 @@ function Home() {
       </Container>
 
       {/* Development & Software Section */}
-      <Container color="grey" title="Development & Software" titleSize="large">
+      <Container color="grey" title="Development & Software" titleSize="large" id="DevelopmentAndSoftware">
         <ImageWithText title="Bespoke Web Solutions, Built Around You" img="/undraw/wireframe.svg" alt="Wireframe Image" direction="right">
           Whether you need a sleek one-page portfolio or a fully-featured business platform, we’ll work with you directly to design and develop a website that fits your vision and goals.
           <br /><br />
@@ -67,7 +67,7 @@ function Home() {
       </Container>
   
       {/* Our Work Section */}
-      <Container color="white" title="Our Work">
+      <Container color="white" title="Our Work" id="LatestWork">
         <Image title="Smokey Joez" url="https://smokeyjoez.co.uk" img="/projects/smokeyjoez.png" alt="Smokey Joez Website Screenshot" />
         <Image title="Edward Gough" url="https://edwardgough.co.uk" img="/projects/edwardgough.png" alt="Edward Gough Website Screenshot" />
       </Container>
@@ -79,7 +79,7 @@ function Home() {
       </CTA>
 
       {/* Media & Publishing Section */}
-      <Container color="grey" title="Media & Publishing" titleSize="large">
+      <Container color="grey" title="Media & Publishing" titleSize="large" id="MediaAndPublishing">
         <ImageWithText title="Helping New Voices Be Heard" img="/undraw/books.svg" alt="Books Image" direction="right">
           At Monstera Creative, we work with emerging authors to help turn manuscripts into professionally published books — without the overwhelm.
           <br /><br />
@@ -110,7 +110,7 @@ function Home() {
       </Container>
       
       {/* Who We Are Section */}
-      <Container color="grey" title="Who We Are" titleSize="large">
+      <Container color="grey" title="Who We Are" titleSize="large" id="AboutUs">
         <ImageWithText title="One Developer. One Creative Vision." img="/undraw/developer.svg" alt="Developer Image" direction="right">
           Monstera Creative is an independent digital studio built around a simple belief: great work comes from a personal touch.
           <br /><br />
