@@ -1,52 +1,40 @@
 import { useState, useEffect, useRef } from "react";
 
-function Navigation() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const navMenuRef = useRef(null);
-  const navToggleRef = useRef(null);
+function Menu() {
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const navMenuRef = useRef(null);
+    const navToggleRef = useRef(null);
 
-  // Handle click outside to close menu
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      const target = e.target;
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
 
-      if (navMenuRef.current && !navMenuRef.current.contains(target)) {
-        if (navToggleRef.current && navToggleRef.current.contains(target)) {
-          return;
-        } else {
-          setIsMobileMenuOpen(false);
+    // Handle click outside to close menu
+    useEffect(() => {
+        const handleClickOutside = (e) => {
+        const target = e.target;
+
+        if (navMenuRef.current && !navMenuRef.current.contains(target)) {
+            if (navToggleRef.current && navToggleRef.current.contains(target)) {
+            return;
+            } else {
+            setIsMobileMenuOpen(false);
+            }
         }
-      }
-    };
+        };
 
-    if (isMobileMenuOpen) {
-      document.addEventListener("click", handleClickOutside);
-    }
+        if (isMobileMenuOpen) {
+        document.addEventListener("click", handleClickOutside);
+        }
 
-    return () => {
-      document.removeEventListener("click", handleClickOutside);
-    };
-  }, [isMobileMenuOpen]);
+        return () => {
+        document.removeEventListener("click", handleClickOutside);
+        };
+    }, [isMobileMenuOpen]);
 
-  return (
-    <nav
-      id="header"
-      className="w-full z-30 top-0 text-white py-1 lg:py-6 bg-white pb-7 mb-20"
-    >
-      <div className="w-full container mx-auto flex flex-col flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6 gap-3.5">
-        <div className="pl-4 flex items-center">
-          <a
-            className="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-            href="#"
-          >
-            <img src="/monstera-long.svg" alt="Logo" className="w-max" />
-          </a>
-        </div>
-
+    return (
+        <>
         <div className="lg:hidden pr-4 flex justify-center w-full">
           <button
             ref={navToggleRef}
@@ -71,7 +59,7 @@ function Navigation() {
             <li>
               <a
                 className="inline-block py-2 px-4 text-black no-underline hover:text-gray-800"
-                href="#DevelopmentAndSoftware"
+                href="/#DevelopmentAndSoftware"
               >
                 Development & Software
               </a>
@@ -80,7 +68,7 @@ function Navigation() {
             <li>
               <a
                 className="inline-block py-2 px-4 text-black no-underline hover:text-gray-800"
-                href="#MediaAndPublishing"
+                href="/#MediaAndPublishing"
               >
                 Media & Publishing
               </a>
@@ -89,7 +77,7 @@ function Navigation() {
             <li>
               <a
                 className="inline-block py-2 px-4 text-black no-underline hover:text-gray-800"
-                href="#AboutUs"
+                href="/#AboutUs"
               >
                 Who We Are
               </a>
@@ -105,9 +93,7 @@ function Navigation() {
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
-  );
+    </>
+    )
 }
-
-export default Navigation;
+export default Menu;
