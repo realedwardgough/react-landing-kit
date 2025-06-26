@@ -22,12 +22,12 @@ import Hero from "../components/Hero.jsx";
 import CTA from "../components/CTA.jsx";
 
 // Importing the hooks - fade
-import Fade from "../hooks/fade.jsx";
+import useFade from "../hooks/usefade.jsx";
 
 function Home() {
   
   // Render fade hook
-  Fade();
+  useFade();
 
   return (
     <>

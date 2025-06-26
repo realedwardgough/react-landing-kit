@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const Fade = () => {
+const useFade = () => {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -22,5 +22,4 @@ const Fade = () => {
     };
   }, []);
 };
-
-export default Fade;
+export default useFade;
