@@ -15,42 +15,61 @@ import Container from "../components/Container.jsx";
 import Text from "../components/Text.jsx";
 
 // Importing the hooks - fade
-import Fade from "../hooks/fade.jsx";
+import useFade from "../hooks/useFade.jsx";
 
 function Privacy() {
-  
   // Render fade hook
-  Fade();
+  useFade();
 
   return (
     <>
       {/* Navigation with logo and menu */}
       <Navigation>
-        <Logo img="/monstera-long.svg" alt="Monstera Creative Logo with the three coloured bars behind the text." size="large"/>
+        <Logo
+          img="/images/your-logo.svg"
+          alt="Company Logo with a simple abstract icon"
+          size="large"
+        />
         <Menu />
       </Navigation>
-      
-      {/* Who We Are Section */}
+
+      {/* Privacy content script */}
       <Container color="grey" title="Privacy Policy" titleSize="large">
         <Text>
-          This website is operated by Monstera Creative (Edward Gough). We respect your privacy and are committed to protecting any personal information you may provide.
+          This website is operated by [Your Company Name]. We respect your
+          privacy and are committed to protecting any personal information you
+          may provide.
         </Text>
         <Text title="1. Information We Collect">
-          We do not collect any personal information directly through this website. There are no contact forms, login systems, or data entry fields.
+          We do not collect any personal information directly through this
+          website. There are no contact forms, login systems, or data entry
+          fields.
         </Text>
         <Text title="2. Cookies & Analytics">
-          This website does not use tracking cookies or analytics tools (e.g., Google Analytics). If this changes in the future, this policy will be updated accordingly.
+          This website does not use tracking cookies or analytics tools (e.g.,
+          Google Analytics). If this changes in the future, this policy will be
+          updated accordingly.
         </Text>
         <Text title="3. Embedded Content">
-          This site may contain links to third-party websites or services (e.g., portfolio items hosted elsewhere). These sites may collect data in accordance with their own privacy policies.
+          This site may contain links to third-party websites or services (e.g.,
+          portfolio items hosted elsewhere). These sites may collect data in
+          accordance with their own privacy policies.
         </Text>
         <Text title="4. Contact">
-          If you choose to contact me via email or other listed methods, the information you provide will only be used to respond to your query and will not be stored or shared without your consent.
+          If you choose to contact us via email or other listed methods, the
+          information you provide will only be used to respond to your query and
+          will not be stored or shared without your consent.
         </Text>
         <Text title="5. Changes to This Policy">
-          This privacy policy may be updated from time to time. The most current version will always be available on this page.
-          <br /><br />
-          If you have any questions, you can contact me at, contact us at <a href="mailto:info@monstera-creative.co.uk" className="font-bold">info@monstera-creative.co.uk</a>.
+          This privacy policy may be updated from time to time. The most current
+          version will always be available on this page.
+          <br />
+          <br />
+          If you have any questions, you can contact us at{" "}
+          <a href="mailto:info@yourcompany.co.uk" className="font-bold">
+            info@yourcompany.co.uk
+          </a>
+          .
         </Text>
       </Container>
 
@@ -61,12 +80,15 @@ function Privacy() {
           <ListItem href="/privacy" text="Privacy Policy" />
         </List>
         <List title="Social">
-          <ListItem href="https://www.linkedin.com/in/realedwardgough/" text="Linkedin" />
-          <ListItem href="https://x.com/realedwardgough" text="X (Twitter)" />
+          <ListItem href="#" text="Linkedin" />
+          <ListItem href="#" text="X (Twitter)" />
         </List>
         <List title="Company">
           <ListItem href="#AboutUs" text="About Us" />
-          <ListItem href="mailto:enquire@monstera-creative.co.uk" text="Contact Us" />
+          <ListItem
+            href="mailto:yourcompany@yourdomain.co.uk"
+            text="Contact Us"
+          />
         </List>
       </Footer>
     </>

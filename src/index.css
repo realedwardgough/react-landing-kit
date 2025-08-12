@@ -1,11 +1,9 @@
-
 /**
   * Tailwind CSS v3.0.0
   * https://tailwindcss.com
 **/
 @import url("https://rsms.me/inter/inter.css");
 @import "tailwindcss";
-
 
 /**
   * Global styles
@@ -19,29 +17,30 @@
 
 /** Fonts **/
 @font-face {
-  font-family: 'CostaRica';
-  src: url('./assets/fonts/CostaRica.otf') format('opentype');
+  font-family: "CostaRica";
+  src: url("./assets/fonts/CostaRica.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 .costarica {
-  font-family: 'CostaRica', sans-serif;
+  font-family: "CostaRica", sans-serif;
 }
 .costarica-bold {
-    font-family: 'CostaRica', sans-serif;
-    text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff, -2px 0 0 #fff, 2px 0 0 #fff, 0 -2px 0 #fff, 0 2px 0 #fff;
+  font-family: "CostaRica", sans-serif;
+  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+    2px 2px 0 #fff, -2px 0 0 #fff, 2px 0 0 #fff, 0 -2px 0 #fff, 0 2px 0 #fff;
 }
 
 @font-face {
-  font-family: 'Tangkiwood';
-  src: url('./assets/fonts/TANTangkiwood-Display.otf') format('opentype');
+  font-family: "Tangkiwood";
+  src: url("./assets/fonts/TANTangkiwood-Display.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 .tangkiwood {
-  font-family: 'Tangkiwood', sans-serif;
+  font-family: "Tangkiwood", sans-serif;
 }
 
 /** Base **/
@@ -53,11 +52,14 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 /** Colours **/
 .brand-color-blocks {
-  background: linear-gradient(to bottom, #c7481d 33.33%, #3e9993 33.33% 66.66%, #e6c141 66.66%);
+  background: linear-gradient(
+    to bottom,
+    #c7481d 33.33%,
+    #3e9993 33.33% 66.66%,
+    #e6c141 66.66%
+  );
 }
 .brand-color-one {
   background-color: #c7481d;
@@ -75,16 +77,12 @@ html {
 
 /** Buttons **/
 .brand-button {
-    text-align: left;
-    padding-right: 4px;
-    color: black;
-    line-height: 14px;
-    padding-top: 4px;
+  text-align: left;
+  padding-right: 4px;
+  color: black;
+  line-height: 14px;
+  padding-top: 4px;
 }
-
-
-
-
 
 /** Copied Styles for Mockup **/
 .gradient {

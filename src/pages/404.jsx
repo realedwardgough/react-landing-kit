@@ -15,27 +15,33 @@ import Container from "../components/Container.jsx";
 import FullImage from "../components/FullImage.jsx";
 
 // Importing the hooks
-import Fade from "../hooks/fade.jsx";
+import useFade from "../hooks/useFade.jsx";
 
 function NotFound() {
-  
   // Render fade hook
-  Fade();
+  useFade();
 
   return (
     <>
       {/* Navigation with logo and menu */}
       <Navigation>
-        <Logo img="/monstera-long.svg" alt="Monstera Creative Logo with the three coloured bars behind the text." size="large"/>
+        <Logo
+          img="/images/your-logo.svg"
+          alt="Company Logo with a simple abstract icon"
+          size="large"
+        />
         <Menu />
       </Navigation>
 
-
       {/* Who We Are Section */}
       <Container color="white" title="404" titleSize="large">
-        <FullImage title="" url="/test" img="/undraw/404.svg" alt="404 Error Image" />
+        <FullImage
+          title=""
+          url="/test"
+          img="/undraw/404.svg"
+          alt="404 Error Image"
+        />
       </Container>
-
 
       {/* Footer with logo and menu */}
       <Footer>
@@ -44,12 +50,15 @@ function NotFound() {
           <ListItem href="/privacy" text="Privacy Policy" />
         </List>
         <List title="Social">
-          <ListItem href="https://www.linkedin.com/in/realedwardgough/" text="Linkedin" />
-          <ListItem href="https://x.com/realedwardgough" text="X (Twitter)" />
+          <ListItem href="#" text="Linkedin" />
+          <ListItem href="#" text="X (Twitter)" />
         </List>
         <List title="Company">
           <ListItem href="#AboutUs" text="About Us" />
-          <ListItem href="mailto:enquire@monstera-creative.co.uk" text="Contact Us" />
+          <ListItem
+            href="mailto:yourcompany@yourdomain.co.uk"
+            text="Contact Us"
+          />
         </List>
       </Footer>
     </>
